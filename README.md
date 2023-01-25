@@ -4,6 +4,12 @@
 
 # What is React?
 
-React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.
+React is a JavaScript library for building user interfaces.
 
-React is a tool for building UI components.
+React is used to build single-page applications.
+
+React allows us to create reusable UI components.
+
+# Create React App
+
+**npx create-react-app my-react-app**
