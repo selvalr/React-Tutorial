@@ -12,4 +12,6 @@ React allows us to create reusable UI components.
 
 # Create React App
 
-`npx create-react-app my-react-app`
+```js
+npx create-react-app my-react-app
+```
