@@ -1,17 +1,28 @@
-import { render } from "@testing-library/react";
 import React from "react";
 
-class Hello extends React.Component{
-  constructor(){
-    super()
-  }
-  function handleClickedFun() {
-    console.log(this);
-    
-  }
-    render(){
-      return(
+//2.Class component event
+class Toggle extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
 
-      )
-    }
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
   }
+
+  handleClick() {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.state.isToggleOn ? 'ON' : 'OFF'}
+      </button>
+    );
+  }
+}
+
+export default Toggle;
