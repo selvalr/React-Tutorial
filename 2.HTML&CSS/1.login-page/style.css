@@ -1,0 +1,237 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color:rgb(26, 46, 53);
+  position: absolute;
+}
+
+.container .nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  margin: 10px;
+
+}
+.nav a{
+  padding: 15px 40px;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.nav a:hover{
+background-color: aliceblue;
+color: black;
+
+}
+.login{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.log{
+  /*text-align: center;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:30px ;
+  width: 350px;
+  height: 512px;
+  background-color: white;
+  position: relative;
+  border-radius: 30px;
+}
+
+.logo{
+  position: absolute;
+  margin-top: -20px;
+}
+
+.logo img{
+  border-radius: 40px;
+  height: 80px;
+  width: 80px;
+}
+
+.social-link{
+  display: inline-block;
+
+}
+
+.social-link a{
+  border: 1px solid rgb(120, 144, 156);
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 14px;
+  margin:0px 10px;
+  border-radius: 30px;
+  color:black
+}
+
+.social-link img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.social-link a span{
+  margin: 5px;
+  
+}
+
+.content{
+  margin: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height:100%;
+}
+.content h2{
+  margin-bottom: 35px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: rgb(26, 46, 53);
+}
+span{
+  margin: 40px 0px 20px 0px;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.user input{
+  height: 40px;
+  margin: 3px 0px;
+  padding: 10px;
+  border: 1px solid rgb(120, 144, 156);
+  border-radius: 5px;
+  caret-color:rgb(0, 200, 0);
+  
+}
+
+.user input:hover{
+  border:2px solid #3498db;
+}
+
+.input:focus {
+  outline: none !important;
+  border:2px solid #3498db;
+ 
+}
+
+
+.user a{
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+.btn{
+  margin-top: 20px;
+  width: 100%;
+
+}
+.btn input{
+  height: 35px;
+  width: 100%;
+  border-radius: 30px;
+  border:none;
+  text-transform: uppercase;
+  background-color: rgb(0, 188, 213);
+  color: white;
+  font-size: 20px;
+}
+
+.btn input:hover{
+  background-color: gray;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 20px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+    box-sizing: border-box;
+  color: #080808;
+  font-size: 18px;
+  width: 100%;
+}
+
+
+
+
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 10px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 16px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+
+
