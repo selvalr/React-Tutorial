@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import NameForm from './App';
 import reportWebVitals from './reportWebVitals';
-import User from './ObjectKey';
+import EssayForm from './TextArea';
+import FlavorForm from './SelectTag';
+import Reservation from './MultipleInput';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <User></User>
+    <NameForm />
+    <EssayForm/>
+    <FlavorForm/>
+    <Reservation/>
   </React.StrictMode>
 );
 

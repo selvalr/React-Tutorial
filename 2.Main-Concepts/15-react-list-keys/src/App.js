@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+
+
+
 function App() {
   const person=[
     {id:1,name:"selva",study:"BCA"},
@@ -47,9 +50,11 @@ function App() {
         {Developer.map((dev,index)=>(
           <div key={index}>
             <h3>{dev.name}skill</h3>
-            <div>
-              {dev.skill}
-            </div>
+              <div>
+                {dev.skill.map((skills,index)=>(
+                  <p key={index}>{skills.name}-{skills.type}</p>
+                ))}
+              </div>
           </div>
         ))}
       </div>
