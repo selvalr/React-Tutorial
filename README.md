@@ -14,6 +14,8 @@ React, sometimes referred to as a frontend JavaScript framework, is a JavaScript
 
 React is a tool for building UI components.
 
+Component Based Library.
+
 # React.JS History
 
 - Current version of React.JS is V18.0.0 (April 2022).
@@ -27,6 +29,20 @@ React is a tool for building UI components.
 - Current version of create-react-app is v5.0.1 (April 2022).
 
 - create-react-app includes built tools such as webpack, Babel, and ESLint.
+
+# Why Would You Use React?
+
+- Structre the "views" of your application
+
+- Reusable components with their own state
+
+- JSX-Dynamic markup
+
+- Interactive UIs with Virtual DOM
+
+- Perfomance & Testing
+
+- Very popular in the industry
 
 # Create React App
 
