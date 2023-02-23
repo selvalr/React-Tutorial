@@ -6,10 +6,11 @@ function Car() {
 }
 
 */
+
 const FuncCompo = () => {
   return (
     <div>
-      <h1>function component</h1>
+      <h1>function component in Arrow function</h1>
     </div>
   );
 };
